@@ -1,3 +1,14 @@
+﻿#(Nome do nosso sistema ainda irá aparecer aqui)
+
+##Time de desenvolvimento "Os Naelso"
+* Charles Cavalcante
+* Jeferson Souza 
+* Lucas Bohrer
+* Marcelo Sobrinho
+* Ronei Lopes
+
+##As tecnologias utilizadas, bem como outras informações aparecerão aqui em breve
+
 #Sistema de Fórum de Discussão
 
 ##Problemática
