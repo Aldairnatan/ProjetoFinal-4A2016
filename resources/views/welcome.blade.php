@@ -1,28 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Laravel</title>
 
-        <title>Login - Fórum</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <style>
+            html, body {
+                height: 100%;
+            }
 
-        <!-- Styles -->
-        
+            body {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                display: table;
+                font-weight: 100;
+                font-family: 'Lato', sans-serif;
+            }
+
+            .container {
+                text-align: center;
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+            .content {
+                text-align: center;
+                display: inline-block;
+            }
+
+            .title {
+                font-size: 96px;
+            }
+        </style>
     </head>
     <body>
-        <form action="<?=  action('UserpersonController@login')?>">
-            <center>
-                <h1>Fórum de testes do time "Os Naelso"</h1>
-                Username: <input type="text" id="username"/>
-                <br/>
-                Senha: <input type="text" id="username"/>
-                <br/>
-                <input type="submit" value="Entrar"/>
-            </center>
-        </form>
+        <div class="container">
+            <div class="content">
+                <div class="title">Laravel 5</div>
+            </div>
+        </div>
     </body>
 </html>
