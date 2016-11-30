@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/home', 'UserpersonController@login');
+
+//Route::get('/register', 'HomeController@register');
+//
+//Route::get('/forgot', 'HomeController@forgotPassword');
+//
+//Route::get('/change', 'HomeController@changePassword');
