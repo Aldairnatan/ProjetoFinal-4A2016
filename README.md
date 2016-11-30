@@ -13,3 +13,15 @@ O cadastro da pergunta inclui o enunciado, o tema e 5 respostas possíveis. Tamb
 Quando um aluno entra no sistema usando seu login e senha, ele pode gerar provas com tema específico ou geral, informando o número de questões que deseja responder (o mínimo será 5 questões). Sua pontuação ficará registrada. Também terá acesso ao ranking de alunos mostrando o top 10 dos alunos com mais pontuação.
 
 Sempre que o fator de multiplicação de um tema for alterado, a pontuação já obtida de todos os participantes também deve ser recalculada e informar a todos por e-mail.
+
+#Sobre o projeto
+
+Nome: SysProva.
+
+Equipe de desenvolvimento: Aline Bellé, Ender Mattos, Gleicekelly Santos, Ruth Lima e Wesley Rocha.
+
+Linguagens utilizadas: PHP, HTML, CSS, JavaScript.
+
+Ferramentas: Sublime Text 3, NetBeans IDE, XAMPP, Google Chrome, Mozilla Firefox e FireBug (extensão do Mozilla).
+
+Framework e dependências: CakePHP, Composer.
