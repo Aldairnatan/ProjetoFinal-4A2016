@@ -1,27 +1,25 @@
-# Laravel PHP Framework
+#(Nome do nosso sistema ainda irá aparecer aqui)
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+##Time de desenvolvimento "Os Naelso"
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+* Charles Cavalcante
+* Jeferson Souza
+* Lucas Bohrer
+* Marcelo Sobrinho
+* Ronei Lopes
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+##As tecnologias utilizadas, bem como outras informações aparecerão aqui em breve
 
-## Official Documentation
+#Sistema de Fórum de Discussão
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+##Problemática
 
-## Contributing
+Criar um sistema para controlar fóruns de discussão. Os fóruns são fechados para acesso apenas por usuários cadastrados, porém qualquer pessoa pode se cadastrar no sistema usando seu nome real, nome de exibição, e-mail e senha.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+Existem três tipos de usuários no sistema: (a) administrator, que pode gerenciar fóruns de discussão e fazer tudo que um moderador pode fazer; (b) moderador, que pode gerenciar threads de todos os usuários e fazer tudo que um usuário comum pode fazer; e (c) usuário comum, que pode apenas criar threads dentro de fóruns existentes, como também altera-los ou exclui-los.
 
-## Security Vulnerabilities
+Um fórum é um ambiente que contextualiza uma discussão (ex.: carros, filmes). E esse fórum pode contém sub-fóruns que vão especializando o contexto (ex.: ford, terror). Portanto um fórum terá nome e identificação do fórum pai (se for derivado de algum).
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+Uma thread é uma nova discussão que será postada dentro de um fórum, iniciada por um usuário do sistema. Essa thread pode ser respondida por outros usuários e as respostas podem gerar réplicas, que também podem gerar réplicas, e assim sucessivamente. Todas as réplicas devem ficar aninhadas em suas respostas de origem. Outras informações sobre a thread que devem ficar disponíveis para o usuário são quantidade de respostas e data da última resposta. A ordenação das threads será pela data da última resposta ou data de postagem (caso não tenha alguma resposta ainda).
 
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+Um moderador poderá encerrar uma thread impedindo que os usuários continuem respondendo e até mesmo deletar respostas específicas, porém essas respostas constaram no sistema, mudando o texto para "[resposta deletada pela moderação]" quando isso acontecer.
